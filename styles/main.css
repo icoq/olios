@@ -564,7 +564,6 @@ ul {
   width: auto;
   height: 100vh;
   overflow: auto;
-  padding-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   margin-left: -0.9375rem;
@@ -867,7 +866,7 @@ div.pushbar_overlay {
 }
 
 .store .inner {
-  margin-left: 87px;
+  margin-left: 93px;
   position: relative;
 }
 
@@ -1150,7 +1149,7 @@ div.pushbar_overlay {
   width: 100%;
   z-index: 2;
   display: flex;
-  overflow-x: scroll;
+  overflow-x: auto;
   position: relative;
 }
 
@@ -1645,17 +1644,13 @@ picture {
   }
 
   .navbar__content {
-    padding: 40px 13px 0;
+    padding: 40px 10px 0;
   }
 
   .searchWrap,
   .searchWrap-cart {
     padding-left: 50px;
     margin-left: 61px;
-  }
-
-  .store .inner {
-    margin-left: 90px;
   }
 }
 
@@ -1859,7 +1854,7 @@ picture {
   .btn-buy {
     width: 50vw;
     left: 0;
-    margin: 40px 100px 10px;
+    margin: 40px 100px;
   }
 
   .store .inner .text .store__icon {
@@ -1994,7 +1989,7 @@ picture {
 
 @media only screen and (max-width: 450px) {
   .navbar__content {
-    padding: 30px 13px 0;
+    padding: 30px 10px 0;
   }
 
   .navbar__content_item:first-child {
