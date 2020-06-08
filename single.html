@@ -10,8 +10,16 @@
       href="img/favicons/favicon-48x48.png"
       type="image/x-icon"
     />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
     <link rel="icon" href="img/favicons/favicon-48x48.png" type="image/png" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    />
     <link rel="apple-touch-icon" href="img/favicons/favicon-48x48.png" />
     <link rel="stylesheet" href="styles/main.css" />
   </head>
@@ -78,20 +86,22 @@
     </div>
   </div>
 </nav>
-
 <div class="searchWrap">
   <div class="searchForm">
     <input class="input" type="text" placeholder="seat" />
     <span class="searchClose">&times;</span>
   </div>
-  <h2 class="searchText">Type product name you are looking for</h2>
+  <h2 class="searchText">Type product name you are looking for.</h2>
 
   <div class="store__items searchItems">
     <a
       href="single.html"
       class="searchItem searchItem-seat searchItem-seat-red store__items_item store__items_item-1"
     >
-      <img src="img/item1.jpg" alt="item1" class="img" />
+      <picture>
+        <source type="image/webp" srcset="img/item1.webp" />
+        <img src="img/item1.jpg" alt="item1" class="img" />
+      </picture>
       <div class="text">
         <span class="title searchtitle">RED SEAT </span>
       </div>
@@ -101,7 +111,10 @@
       href="single.html"
       class="searchItem searchItem-table searchItem-table-white store__items_item store__items_item-3"
     >
-      <img src="img/item2.jpg" alt="item3" class="img" />
+      <picture>
+        <source type="image/webp" srcset="img/item2.webp" />
+        <img src="img/item2.jpg" alt="item1" class="img" />
+      </picture>
       <div class="text">
         <span class="title searchtitle">WHITE TABLE</span>
       </div>
@@ -111,7 +124,10 @@
       href="single.html"
       class="searchItem searchItem-seat searchItem-seat-blue store__items_item store__items_item-3"
     >
-      <img src="img/item3.jpg" alt="item3" class="img" />
+      <picture>
+        <source type="image/webp" srcset="img/item3.webp" />
+        <img src="img/item3.jpg" alt="item1" class="img" />
+      </picture>
       <div class="text">
         <span class="title searchtitle">BLUE SEAT</span>
       </div>
@@ -121,7 +137,10 @@
       href="single.html"
       class="searchItem searchItem-bed searchItem-bed-modern store__items_item store__items_item-3"
     >
-      <img src="img/item4.jpg" alt="item3" class="img" />
+      <picture>
+        <source type="image/webp" srcset="img/item4.webp" />
+        <img src="img/item4.jpg" alt="item1" class="img" />
+      </picture>
       <div class="text">
         <span class="title searchtitle">MODERN BED</span>
       </div>
@@ -130,7 +149,10 @@
       href="single.html"
       class="searchItem searchItem-seat searchItem-seat-dark store__items_item store__items_item-3"
     >
-      <img src="img/item5.jpg" alt="item3" class="img" />
+      <picture>
+        <source type="image/webp" srcset="img/item5.webp" />
+        <img src="img/item5.jpg" alt="item1" class="img" />
+      </picture>
       <div class="text">
         <span class="title searchtitle">DARK SEAT</span>
       </div>
@@ -144,26 +166,44 @@
   <div class="store__items searchItems">
     <a
       href="single.html"
-      class="searchItem searchItem-seat searchItem-seat-red store__items_item store__items_item-1"
+      class="searchItem store__items_item store__items_item-1"
     >
-      <img src="img/item1.jpg" alt="item1" class="img" />
+      <picture>
+        <source type="image/webp" srcset="img/item1.webp" />
+        <img src="img/item1.jpg" alt="item1" class="img" />
+      </picture>
       <div class="text">
-        <span class="title searchtitle">RED SEAT </span>
-        <span class="searchClose searchClose-small">&times;</span>
+        <span class="title searchtitle searchtitle-1">RED SEAT</span>
       </div>
+      <span class="searchClose searchClose-small">&times;</span>
     </a>
 
     <a
       href="single.html"
-      class="searchItem searchItem-seat searchItem-seat-dark store__items_item store__items_item-3"
+      class="searchItem-cart store__items_item store__items_item-3"
     >
-      <img src="img/item5.jpg" alt="item3" class="img" />
+      <picture>
+        <source type="image/webp" srcset="img/item5.webp" />
+        <img src="img/item5.jpg" alt="item1" class="img" />
+      </picture>
       <div class="text">
-        <span class="title searchtitle">DARK SEAT</span>
-        <span class="searchClose searchClose-small">&times;</span>
+        <span class="title searchtitle searchtitle-2">DARK SEAT</span>
       </div>
+      <span class="searchClose searchClose-small">&times;</span>
     </a>
-
+    <a
+      href="single.html"
+      class="searchItem-cart store__items_item store__items_item-3"
+    >
+      <picture>
+        <source type="image/webp" srcset="img/item4.webp" />
+        <img src="img/item4.jpg" alt="item1" class="img" />
+      </picture>
+      <div class="text">
+        <span class="title searchtitle searchtitle-3">MODERN BED</span>
+      </div>
+      <span class="searchClose searchClose-small">&times;</span>
+    </a>
     <a href="#" onclick="return false;" class="btn btn-buy">BUY</a>
   </div>
 </div>
