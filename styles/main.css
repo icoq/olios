@@ -760,7 +760,7 @@ html {
   border-radius: 50px;
   cursor: pointer;
   font-size: 18px;
-  color: white;
+  color: white !important;
   display: flex;
   justify-content: center;
   align-self: center;
