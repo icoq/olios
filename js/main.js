@@ -329,7 +329,8 @@ $(".rec").niceScroll({
   // scroll with ease movement
   //   sensitiverail: true, // click on rail make a scroll
   horizrailenabled: true,
-  oneaxismousemode: "hidden"
+  oneaxismousemode: "hidden" //emulatetouch: true,
+
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../../../node_modules/jquery/dist/jquery.js"), __webpack_require__(/*! jquery */ "../../../node_modules/jquery/dist/jquery.js"), __webpack_require__(/*! jquery */ "../../../node_modules/jquery/dist/jquery.js")))
 

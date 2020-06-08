@@ -564,6 +564,7 @@ ul {
   width: auto;
   height: 100vh;
   overflow: auto;
+  padding-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   margin-left: -0.9375rem;
@@ -1149,7 +1150,7 @@ div.pushbar_overlay {
   width: 100%;
   z-index: 2;
   display: flex;
-  overflow-x: auto;
+  overflow-x: scroll;
   position: relative;
 }
 
@@ -1644,7 +1645,7 @@ picture {
   }
 
   .navbar__content {
-    padding: 40px 10px 0;
+    padding: 40px 13.5px 0;
   }
 
   .searchWrap,
@@ -1854,7 +1855,7 @@ picture {
   .btn-buy {
     width: 50vw;
     left: 0;
-    margin: 40px 100px;
+    margin: 40px 100px 10px;
   }
 
   .store .inner .text .store__icon {
@@ -1989,7 +1990,7 @@ picture {
 
 @media only screen and (max-width: 450px) {
   .navbar__content {
-    padding: 30px 10px 0;
+    padding: 30px 13.5px 0;
   }
 
   .navbar__content_item:first-child {
