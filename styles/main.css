@@ -867,7 +867,7 @@ div.pushbar_overlay {
 }
 
 .store .inner {
-  margin-left: 93px;
+  margin-left: 87px;
   position: relative;
 }
 
@@ -1652,6 +1652,10 @@ picture {
   .searchWrap-cart {
     padding-left: 50px;
     margin-left: 61px;
+  }
+
+  .store .inner {
+    margin-left: 90px;
   }
 }
 
