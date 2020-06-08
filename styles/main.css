@@ -1645,7 +1645,7 @@ picture {
   }
 
   .navbar__content {
-    padding: 40px 13.5px 0;
+    padding: 40px 13px 0;
   }
 
   .searchWrap,
@@ -1990,7 +1990,7 @@ picture {
 
 @media only screen and (max-width: 450px) {
   .navbar__content {
-    padding: 30px 13.5px 0;
+    padding: 30px 13px 0;
   }
 
   .navbar__content_item:first-child {

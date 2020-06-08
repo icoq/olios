@@ -319,19 +319,17 @@ $(".searchItems").niceScroll({
   //   sensitiverail: true, // click on rail make a scroll
   horizrailenabled: false,
   oneaxismousemode: "hidden"
-});
-$(".rec").niceScroll({
-  cursorcolor: "#0023ff",
-  mousescrollstep: 30,
-  cursorborder: "none",
-  cursorwidth: "3px",
-  smoothscroll: true,
-  // scroll with ease movement
-  //   sensitiverail: true, // click on rail make a scroll
-  horizrailenabled: true,
-  oneaxismousemode: "hidden" //emulatetouch: true,
-
-});
+}); // $(".rec").niceScroll({
+//   cursorcolor: "#0023ff",
+//   mousescrollstep: 30,
+//   cursorborder: "none",
+//   cursorwidth: "3px",
+//   smoothscroll: true, // scroll with ease movement
+//   //   sensitiverail: true, // click on rail make a scroll
+//   horizrailenabled: true,
+//   oneaxismousemode: "hidden",
+//   //emulatetouch: true,
+// });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../../../node_modules/jquery/dist/jquery.js"), __webpack_require__(/*! jquery */ "../../../node_modules/jquery/dist/jquery.js"), __webpack_require__(/*! jquery */ "../../../node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
