@@ -623,26 +623,26 @@ ul {
 .searchItem-cart .searchtitle {
   font-size: 35px;
   color: #5a5a5a;
-  margin-left: 20px;
+  margin-left: 10px;
   font-weight: 100;
 }
 
 .searchItem .searchtitle-1:after,
 .searchItem-cart .searchtitle-1:after {
   color: #0023ff;
-  content: " : 2";
+  content: ": 2";
 }
 
 .searchItem .searchtitle-2:after,
 .searchItem-cart .searchtitle-2:after {
   color: #0023ff;
-  content: " : 3";
+  content: ": 3";
 }
 
 .searchItem .searchtitle-3:after,
 .searchItem-cart .searchtitle-3:after {
   color: #0023ff;
-  content: " : 1";
+  content: ": 1";
 }
 
 .searchItem:last-child,
@@ -1665,7 +1665,7 @@ picture {
 
   .searchItem,
   .searchItem-cart {
-    max-width: 530px !important;
+    max-width: 510px !important;
   }
 
   .searchItem .searchtitle,
@@ -1793,9 +1793,19 @@ picture {
     margin: 0 auto !important;
   }
 
+  .input {
+    font-size: 30px;
+  }
+
   .searchForm {
-    margin-left: 40px;
     margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    right: 17px;
+  }
+
+  .searchClose {
+    font-size: 40px;
   }
 
   .searchClose-small {
@@ -1968,6 +1978,12 @@ picture {
   .quanText {
     font-size: 30px;
     margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .input {
+    max-width: 250px;
   }
 }
 
