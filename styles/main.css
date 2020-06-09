@@ -564,6 +564,7 @@ ul {
   width: auto;
   height: 100vh;
   overflow: auto;
+  padding-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   margin-left: -0.9375rem;
@@ -623,26 +624,26 @@ ul {
 .searchItem-cart .searchtitle {
   font-size: 35px;
   color: #5a5a5a;
-  margin-left: 20px;
+  margin-left: 10px;
   font-weight: 100;
 }
 
 .searchItem .searchtitle-1:after,
 .searchItem-cart .searchtitle-1:after {
   color: #0023ff;
-  content: " : 2";
+  content: ": 2";
 }
 
 .searchItem .searchtitle-2:after,
 .searchItem-cart .searchtitle-2:after {
   color: #0023ff;
-  content: " : 3";
+  content: ": 3";
 }
 
 .searchItem .searchtitle-3:after,
 .searchItem-cart .searchtitle-3:after {
   color: #0023ff;
-  content: " : 1";
+  content: ": 1";
 }
 
 .searchItem:last-child,
@@ -671,9 +672,9 @@ ul {
 }
 
 body {
-  -ms-overflow-style: none;
   /* Internet Explorer 10+ */
   /* Firefox */
+  width: auto;
   height: auto;
   background-image: linear-gradient(180deg, white 50%, #ebebeb 100%);
   overflow-x: hidden;
@@ -681,26 +682,16 @@ body {
 }
 
 body::-webkit-scrollbar {
+  display: none;
   /* Safari and Chrome */
 }
 
 html {
-  overflow: scroll;
+  overflow: auto;
   overflow-x: hidden;
 }
 
-::-webkit-scrollbar {
-  width: 0px;
-  /* Remove scrollbar space */
-  background: transparent;
-  /* Optional: just make scrollbar invisible */
-}
-
 /* Optional: show position indicator in red */
-
-::-webkit-scrollbar-thumb {
-  background: #ff000000;
-}
 
 .slider .slide {
   position: relative;
@@ -866,7 +857,7 @@ div.pushbar_overlay {
 }
 
 .store .inner {
-  margin-left: 93px;
+  margin-left: 87px;
   position: relative;
 }
 
@@ -1147,10 +1138,10 @@ div.pushbar_overlay {
   height: 35vh;
   background-color: white;
   width: 100%;
-  z-index: 2;
   display: flex;
   overflow-x: auto;
   position: relative;
+  align-items: center;
 }
 
 .rec .store__items_item {
@@ -1159,10 +1150,11 @@ div.pushbar_overlay {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 30px;
+  padding: 10px 20px;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 10px;
+  max-height: 300px !important;
 }
 
 .rec .store__items_item:first-child {
@@ -1186,11 +1178,12 @@ div.pushbar_overlay {
 }
 
 .singletitle-small {
-  position: fixed;
+  position: absolute;
   font-size: 30px;
   font-weight: lighter;
   color: #5f5f5f;
   margin: 30px;
+  top: 2%;
 }
 
 .singledesc {
@@ -1644,13 +1637,17 @@ picture {
   }
 
   .navbar__content {
-    padding: 40px 10px 0;
+    padding: 40px 13px 0;
   }
 
   .searchWrap,
   .searchWrap-cart {
     padding-left: 50px;
     margin-left: 61px;
+  }
+
+  .store .inner {
+    margin-left: 90px;
   }
 }
 
@@ -1665,7 +1662,7 @@ picture {
 
   .searchItem,
   .searchItem-cart {
-    max-width: 530px !important;
+    max-width: 510px !important;
   }
 
   .searchItem .searchtitle,
@@ -1793,9 +1790,19 @@ picture {
     margin: 0 auto !important;
   }
 
+  .input {
+    font-size: 30px;
+  }
+
   .searchForm {
-    margin-left: 40px;
     margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    right: 17px;
+  }
+
+  .searchClose {
+    font-size: 40px;
   }
 
   .searchClose-small {
@@ -1844,7 +1851,7 @@ picture {
   .btn-buy {
     width: 50vw;
     left: 0;
-    margin: 40px 100px;
+    margin: 40px 100px 10px;
   }
 
   .store .inner .text .store__icon {
@@ -1971,9 +1978,15 @@ picture {
   }
 }
 
+@media only screen and (max-width: 460px) {
+  .input {
+    max-width: 250px;
+  }
+}
+
 @media only screen and (max-width: 450px) {
   .navbar__content {
-    padding: 30px 10px 0;
+    padding: 30px 13px 0;
   }
 
   .navbar__content_item:first-child {
