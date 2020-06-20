@@ -463,7 +463,7 @@ ul {
 
 .navbar__content_item:last-child {
   margin-top: 30vh;
-  margin-bottom: 75px !important;
+  margin-bottom: 90px !important;
 }
 
 .searchWrap,
@@ -1158,6 +1158,12 @@ div.pushbar_overlay {
   margin-top: 50px;
   margin-bottom: 10px;
   max-height: 300px !important;
+}
+
+.rec .store__items_item .title,
+.recs .store__items_item .title {
+  color: black !important;
+  font-weight: 100 !important;
 }
 
 .rec .store__items_item .img,
