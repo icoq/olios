@@ -666,6 +666,11 @@ ul {
   max-width: 36px;
 }
 
+.innerText {
+  width: 100%;
+  max-width: 90%;
+}
+
 * {
   font-family: Lato;
 }
@@ -708,6 +713,8 @@ html {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   top: 50%;
   left: 50%;
   margin-top: 50px;
@@ -719,7 +726,6 @@ html {
   font-weight: lighter;
   color: black;
   max-width: 75%;
-  margin-left: 45px;
 }
 
 .slider .slide .text .innerText .subtitle {
@@ -727,7 +733,6 @@ html {
   color: black;
   font-weight: lighter;
   max-width: 75%;
-  margin-left: 45px;
 }
 
 .slider .slide .text .bgText {
@@ -760,6 +765,11 @@ html {
 
 .btn:hover {
   background: #001ccc !important;
+}
+
+.btn-s {
+  margin: 30px auto !important;
+  position: relative;
 }
 
 .btn-buy {
@@ -902,7 +912,7 @@ div.pushbar_overlay {
   justify-content: center;
   margin-top: 30px;
   padding: 15px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease !important;
 }
 
 .store .inner .store__items_item:hover .img {
@@ -1365,17 +1375,11 @@ picture {
 
 @media only screen and (min-width: 750px) {
   .slider .slide .text .innerText .title {
-    margin-left: 10px;
     max-width: 90%;
   }
 
   .slider .slide .text .innerText .subtitle {
-    margin-left: 10px;
     max-width: 90%;
-  }
-
-  .btn-s {
-    margin-right: 25px;
   }
 }
 
@@ -1388,12 +1392,6 @@ picture {
 @media only screen and (min-width: 1250px) {
   .store .inner .store__items_item-4 .img {
     margin-left: 40px;
-  }
-}
-
-@media only screen and (min-width: 1500px) {
-  .btn-s {
-    margin-right: 50px !important;
   }
 }
 
@@ -1450,7 +1448,6 @@ picture {
     font-size: 25px;
     color: black;
     font-weight: lighter;
-    width: 500px;
   }
 
   .slider .slide .text .innerText .btn {
