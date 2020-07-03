@@ -668,7 +668,7 @@ ul {
 
 .innerText {
   width: 100%;
-  max-width: 90%;
+  max-width: 90%c;
 }
 
 * {
@@ -686,16 +686,23 @@ body {
 }
 
 body::-webkit-scrollbar {
-  display: none;
   /* Safari and Chrome */
 }
 
 html {
-  overflow: auto;
-  overflow-x: hidden;
+  /* Optional: show position indicator in red */
 }
 
-/* Optional: show position indicator in red */
+html::-webkit-scrollbar {
+  width: 0px;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #ff000000;
+}
 
 .slider .slide {
   position: relative;
@@ -1106,7 +1113,7 @@ div.pushbar_overlay {
 }
 
 .of {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 .single-body {
